@@ -1,38 +1,87 @@
-/* Reset */
+/* --- RESET --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global styling */
+/* --- GLOBAL STYLING --- */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
+  background: #f8f8f8;
 }
 
-/* Navigation styling */
+/* --- NAVIGATION --- */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  background: #174dc0;
+  background: #222;
   padding: 15px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 nav a {
-  color: rgb(173, 29, 29);
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hover interaction + transition (Requirement #7) */
-nav a:hover {
-  color: #c78119;
+  font-weight: 600;
   transition: 0.3s ease;
 }
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Highlight current page */
+.active {
+  color: #ff9800;
+}
+
+/* --- HEADERS & SECTIONS --- */
+h1 {
+  margin-bottom: 15px;
+}
+
+section, header {
+  max-width: 700px;
+}
+
+/* --- CARD (used on projects page) --- */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (Requirement #7) */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* --- BUTTON (Interactive element) --- */
+.cta-btn {
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
 /* Tablet */
 @media (max-width: 768px) {
   nav ul {
@@ -50,18 +99,8 @@ nav a:hover {
   nav ul {
     padding: 10px;
   }
-}
-.cta-btn {
-  background: #333;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
 
-.cta-btn:hover {
-  transform: scale(1.05);
-  background: #ff9800;
+  .card {
+    padding: 15px;
+  }
 }
