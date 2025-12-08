@@ -79,6 +79,34 @@ section, header {
   background: #ff9800;
   transform: scale(1.05);
 }
+.cta-btn {
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
+.cta-btn {
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
 
 /* --- RESPONSIVE DESIGN --- */
 
